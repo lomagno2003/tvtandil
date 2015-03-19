@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!-- FOUNDATION SCRIPTS -->
+<link rel="stylesheet" href="css/foundation.css" />
+<script src="js/vendor/modernizr.js"></script>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script>
+      $(document).foundation();
+    </script>
+
+<!-- ANGULAR SCRIPTS -->
+<script src="js/angularjs/angular.min.js"></script>
+<script type="text/javascript">
+		var app = angular.module('myApp', []);
+		
+		app.controller('myController', function($scope) {
+		    $scope.firstName = "German";
+		    $scope.lastName = "Bogado";
+		    $scope.list = ["Fishing","Running","Everything"];
+		});
+	</script>
+</head>
+
+<body>
+	<div class="row" ng-app="myApp">
+		<div class="large-3 columns"></div>
+		<div class="large-6 columns" ng-controller="myController">
+			<div class="panel">
+				<p>
+					First Name: <input type="text" ng-model="firstName"> Last
+					Name: <input type="text" ng-model="lastName">
+				</p>
+				<p>My name is {{firstName}} {{lastName}} and i'm Awesome! and Flaco is gay</p>
+			</div>
+			<div class="panel">
+				<p>I like:</p>
+				<ul ng-repeat="item in list">
+					<li>{{item}}</li>
+				</ul>
+			</div>
+		</div>
+		<div class="large-3 columns"></div>
+	</div>
+
+</body>
+</html>
