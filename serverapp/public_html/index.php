@@ -8,4 +8,9 @@ $app->get('/hello', function() {
     return 'Hello!';
 });
 
+$app->get('/dad', function(Silex\Application $app) {
+	$obj = (object) 'ciao';
+	return $app->json($obj);
+});
+
 $app->run();
