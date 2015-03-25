@@ -1,0 +1,27 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<script type="text/javascript" src="js/angularjs/angular.min.js"></script>
+		<script type="text/javascript" src="js/vendor/jquery.js"></script>
+		<script type="text/javascript" src="js/foundation.min.js"></script>
+		<script>
+			$(document).foundation();
+	    </script>
+	    
+	    <script>
+		    var app = angular.module('myApp', []);
+		    app.controller('myCtrl', function($scope) {
+		        $scope.firstName = "John";
+		        $scope.lastName = "Doe";
+		    });
+	    </script>
+	</head>
+	<body>
+		<div ng-app="myApp" ng-controller="myCtrl">
+			First Name: <input type="text" ng-model="firstName"><br>
+			Last Name: <input type="text" ng-model="lastName"><br>
+			<br>
+			Full Name: {{firstName + " " + lastName}}
+		</div>
+	</body>
+</html>
