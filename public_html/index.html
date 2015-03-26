@@ -1,27 +1,22 @@
 <!doctype html>
 <html class="no-js" lang="en">
 	<head>
-		<script type="text/javascript" src="js/angularjs/angular.min.js"></script>
 		<script type="text/javascript" src="js/vendor/jquery.js"></script>
-		<script type="text/javascript" src="js/foundation.min.js"></script>
+		<script type="text/javascript" src="js/vendor/underscore/underscore.js"></script>
+		<script type="text/javascript" src="js/vendor/angularjs/angular.js"></script>
+		<script type="text/javascript" src="js/vendor/angularjs/angular-route.js"></script>
+		<script type="text/javascript" src="js/vendor/restangular/restangular.js"></script>
+	    <script type="text/javascript" src="js/vendor/foundation/foundation.js"></script>
 		<script>
 			$(document).foundation();
 	    </script>
 	    
-	    <script>
-		    var app = angular.module('myApp', []);
-		    app.controller('myCtrl', function($scope) {
-		        $scope.firstName = "John";
-		        $scope.lastName = "Doe";
-		    });
-	    </script>
+	    <script type="text/javascript" src="app/app.js"></script>
+	    <script type="text/javascript" src="app/news/newsController.js"></script>
 	</head>
 	<body>
-		<div ng-app="myApp" ng-controller="myCtrl">
-			First Name: <input type="text" ng-model="firstName"><br>
-			Last Name: <input type="text" ng-model="lastName"><br>
-			<br>
-			Full Name: {{firstName + " " + lastName}}
+		<div ng-app="app">
+			<div ng-view></div>
 		</div>
 	</body>
 </html>
