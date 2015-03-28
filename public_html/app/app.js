@@ -8,7 +8,10 @@ app.config(function($routeProvider) {
 	$routeProvider.when('/news', {
 		templateUrl : 'app/news/news.html',
 		controller : 'newsController'
+	}).when('/news', {
+		templateUrl : 'app/home/home.html',
+		controller : 'homeController'
 	}).otherwise({
-		redirectTo : '/news'
+		redirectTo : '/home'
 	});
 });

@@ -23,6 +23,7 @@ app.controller('newsController', function($scope, Restangular) {
 	$scope.title = 'News';
 	$scope.baseNews = Restangular.all('news/');
 	$scope.news = $scope.baseNews.getList().$object;
+	$scope.flaco = 4 + 5; 
 
 	$scope.newNews = {
 		"title" : "defaultTitle"
@@ -34,7 +35,7 @@ app.controller('newsController', function($scope, Restangular) {
 		elem.put();
 	}
 
-	$scope.submit = function() {
+	$scope.enviar = function() {
 		$scope.baseNews.post($scope.newNews);
 	};
 });
