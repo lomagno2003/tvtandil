@@ -1,7 +1,7 @@
 var app = angular.module('app', [ 'ngRoute','restangular' ]);
 
 app.config(function(RestangularProvider) {
-    RestangularProvider.setBaseUrl('http://localhost:8081/index.php/');
+    RestangularProvider.setBaseUrl('http://186.136.230.149:8081/index.php/');
 });
 
 app.config(function($routeProvider) {
