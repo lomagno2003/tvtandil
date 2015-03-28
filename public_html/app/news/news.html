@@ -4,8 +4,23 @@
 	<li ng-repeat="elem in news")>News Id: {{elem.id}} News Title: {{elem.title}}</li>
 </ul>
 
-<form ng-submit="submit()">
+<div class="suma">{{flaco}}</div>
+
+<form ng-submit="enviar()">
 	<span>title: </span><input type="text" ng-model="newNews.title" name="title" />
 	<span>File: </span><input type="file" fileread="newNews.file" name="file" />
   	<input type="submit" id="submit" value="Submit" />
 </form>
+
+<a class="button" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false">Has Dropdown</a>
+<ul id="drop1" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+  <li><a href="#">This is a link</a></li>
+  <li><a href="#">This is another</a></li>
+  <li><a href="#">Yet another</a></li>
+</ul>
+
+<script>
+ 	$(document).foundation();
+  </script>
+
+
