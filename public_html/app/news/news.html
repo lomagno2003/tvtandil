@@ -1,0 +1,11 @@
+<h1>{{title}}</h1>
+
+<ul>
+	<li ng-repeat="elem in news")>News Id: {{elem.id}} News Title: {{elem.title}}</li>
+</ul>
+
+<form ng-submit="submit()">
+	<span>title: </span><input type="text" ng-model="newNews.title" name="title" />
+	<span>File: </span><input type="file" fileread="newNews.file" name="file" />
+  	<input type="submit" id="submit" value="Submit" />
+</form>
