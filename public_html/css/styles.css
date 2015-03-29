@@ -1,1 +1,8 @@
 body {text-align: center}
+
+
+
+.menu ul {list-style: none}
+.menu li {display: inline-block; background-color: #000050;}
+.menu a {text-decoration: none; width: 5em; display: inline-block; color: #ffffff}
+.menu a:hover {background-color: #223370; color: #000000}
