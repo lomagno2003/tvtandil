@@ -1,8 +1,30 @@
-body {text-align: center}
+body {text-align: center; background-color: #ccc}
+
+.cont {width: 75%; float: right; display: inline-block;}
+
+.clima {width: 100%; height: 2.5em; background-color: #002C56; display: inline-block; padding: 0; margin: 0em}
+
+
+.redes {margin:0em 0em 0em 37em;}
+.facebook {width: 2em; display: inline-block; background-color: yellow; height: 2em;}
+.twitter {width: 2em; display: inline-block; background-color: green; height: 2em}
+.googleplus {width: 2em; display: inline-block; background-color: red; height: 2em}
+
+nav {background-color: #003565 ; width: 100%; height: 2.5em; margin: 0em}
+nav ul {list-style: none; float: right; }
+nav li {display: inline-block; line-height: 2.5em;}
+nav a {text-decoration: none; width: 5em; display: inline-block; color: #fff; heigth: 2.5em}
+nav a:hover {background-color: #0F62A5; color: #fff}
+
+.clear {clear: both}
+
+.logo {height: 5em; width: 25%; background-color: #002040;}
+
+
+.cuerpo {height: 70em; background-color: #fff}
 
 
 
-.menu ul {list-style: none}
-.menu li {display: inline-block; background-color: #000050;}
-.menu a {text-decoration: none; width: 5em; display: inline-block; color: #ffffff}
-.menu a:hover {background-color: #223370; color: #000000}
+#002C56
+#003565
+#0F62A5
