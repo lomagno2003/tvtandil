@@ -8,7 +8,7 @@ app.config(function($routeProvider) {
 	$routeProvider.when('/news', {
 		templateUrl : 'app/news/news.html',
 		controller : 'newsController'
-	}).when('/news', {
+	}).when('/home', {
 		templateUrl : 'app/home/home.html',
 		controller : 'homeController'
 	}).otherwise({
