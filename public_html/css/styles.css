@@ -1,1 +1,4 @@
-body {text-align: center}
+.logomad {width: 6em; background-color: #345185; height: 2em; display: inline-block}
+.dropboton:hover {background-color: blue}
+
+
