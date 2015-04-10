@@ -8,6 +8,12 @@ app.config(function($routeProvider) {
 	$routeProvider.when('/news', {
 		templateUrl : 'app/news/news.html',
 		controller : 'newsController'
+	}).when('/tv', {
+		templateUrl : 'app/tv/tv.html',
+		controller : 'tvController'
+	}).when('/radio', {
+		templateUrl : 'app/radio/radio.html',
+		controller : 'radioController'
 	}).when('/newsAbm', {
 		templateUrl : 'app/newsAbm/newsAbm.html',
 		controller : 'newsAbmController'
