@@ -1,8 +1,15 @@
-
 <div class="small-12 large-6  columns">
-<h1>Titulo: {{actualNews.title}}</h1>
+<h1>{{actualNews.title}}</h1>
+<p>{{actualNews.description}}</p>
 
-
-<p>Descripcion: {{actualNews.description}}</p>
-
-<img alt="" src="{{actualNews.media[0].url}}">
+<div class="panel">
+<!-- TODO: Deprecated orbit for gallery, look for other -->
+	<ul class="panel" data-orbit>
+	  <li ng-repeat="media in actualNews.media">
+	    <img src="{{media.url}}" alt="slide 1" foundation-synchronyzed/>
+	    <div class="orbit-caption">
+	    	{{media.epigraph}}
+	    </div>
+	  </li>
+	</ul>
+</div>

@@ -9,7 +9,15 @@ app.directive('foundationSynchronyzed', function() {
 				equalizer : {
 					// Specify if Equalizer should make elements equal height once they become stacked.
 					equalize_on_stack : true
-				}
+				},
+				orbit: {
+				    animation: 'slide',
+				    timer_speed: 1000,
+				    pause_on_hover: true,
+				    animation_speed: 500,
+				    navigation_arrows: true,
+				    bullets: false
+				  }
 			});
 		},
 	};

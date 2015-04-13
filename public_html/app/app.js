@@ -35,7 +35,16 @@ app.run(function($rootScope) {
 			"id":0,
 			"title" : "Titulo 1",
 			"media":[{
+				"epigraph":"Picture 1",
 			     "url" : "http://th02.deviantart.net/fs71/200H/i/2010/255/0/6/dsasda_by_caglarocal-d2yl1zw.jpg",
+			},
+			{
+				"epigraph":"Picture 2",
+			     "url" : "http://globe-views.com/dcim/dreams/car/car-03.jpg",
+			},
+			{
+				"epigraph":"Picture 3",
+			     "url" : "http://wallpapers111.com/wp-content/uploads/2015/03/Cars-Desktop-Wallpaper-HD3.jpg",
 			}],
 			"description" : "This is a long description of the news, it's so long that couldn't been displayed in the news thumbnail, so it should be cutted off"
 		},
@@ -43,6 +52,7 @@ app.run(function($rootScope) {
 			"id":1,
 			"title" : "Titulo 2",
 			"media":[{
+				"epigraph":"Picture 1",
 			     "url" : "http://i.telegraph.co.uk/multimedia/archive/01909/nice-beach_1909152b.jpg",
 			}],
 			"description" : "This is a short description of the news"
@@ -51,6 +61,7 @@ app.run(function($rootScope) {
 			"id":2,
 			"title" : "Titulo 3",
 			"media":[{
+				"epigraph":"Picture 1",
 			     "url" : "http://i.telegraph.co.uk/multimedia/archive/01909/nice-beach_1909152b.jpg",
 			}],
 			"description" : "This is a long description of the news, it's so long that couldn't been displayed in the news thumbnail, so it should be cutted off"
@@ -59,6 +70,7 @@ app.run(function($rootScope) {
 			"id":3,
 			"title" : "Titulo 4",
 			"media":[{
+				"epigraph":"Picture 1",
 			     "url" : "http://i.telegraph.co.uk/multimedia/archive/01909/nice-beach_1909152b.jpg",
 			}],
 			"description" : "This is a long description of the news, it's so long that couldn't been displayed in the news thumbnail, so it should be cutted off"
