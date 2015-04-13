@@ -1,7 +1,5 @@
 var app = angular.module('app');
 
-app.controller('newsDetailController', function($scope, $rootScope) {
-	$scope.actualNews = $rootScope.actualNews;
-	
-	
+app.controller('newsDetailController', function($scope, $rootScope, $routeParams) {
+	$scope.actualNews = $rootScope.dummyNews[parseInt($routeParams.newsId)];
 });
