@@ -6,17 +6,10 @@
 <script type="text/javascript" src="js/vendor/jquery.js"></script>
 <script type="text/javascript" src="js/vendor/underscore/underscore.js"></script>
 <script type="text/javascript" src="js/vendor/angularjs/angular.js"></script>
-<script type="text/javascript"
-	src="js/vendor/angularjs/angular-route.js"></script>
-<script type="text/javascript"
-	src="js/vendor/restangular/restangular.js"></script>
-<script type="text/javascript"
-	src="js/vendor/foundation/foundation.min.js"></script>
-<script type="text/javascript"
-	src="js/vendor/mmfoundation/mm-foundation-tpls-0.5.1.js"></script>
-<script>
-			$(document).foundation();
-	    </script>
+<script type="text/javascript" src="js/vendor/angularjs/angular-route.js"></script>
+<script type="text/javascript" src="js/vendor/restangular/restangular.js"></script>
+<script type="text/javascript" src="js/vendor/foundation/foundation.min.js"></script>
+<script type="text/javascript" src="js/vendor/mmfoundation/mm-foundation-tpls-0.5.1.js"></script>
 
 <script type="text/javascript" src="app/app.js"></script>
 <script type="text/javascript" src="app/news/newsController.js"></script>
@@ -24,62 +17,52 @@
 <script type="text/javascript" src="app/newsDetail/newsDetailController.js"></script>
 <script type="text/javascript" src="app/newsAbm/newsAbmController.js"></script>
 <script type="text/javascript" src="app/topBar/topBarController.js"></script>
+<script type="text/javascript" src="app/common/directives/newsDirective/newsDirective.js"></script>
+<script type="text/javascript" src="app/common/directives/foundationSynchronyzed/foundationSynchronyzed.js"></script>
+
 </head>
 <body>
-	<div class="row" ng-app="app">
-	
-	<!-- Barra superior, logo Mad tv -->
-	<nav class="top-bar" data-topbar role="navigation">
-  <ul class="title-area">
-  </ul>
-  </nav>
+	<div class="row" ng-app="app" foundation-synchronyzed>
+
+		<!-- Barra superior, logo Mad tv -->
+		<nav class="top-bar" data-topbar role="navigation">
+			<ul class="title-area">
+			</ul>
+		</nav>
 
 		<nav class="top-bar" data-topbar role="navigation">
-  <ul class="title-area">
-    <li class="name">      
-    </li>
-     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
-  
+			<ul class="title-area">
+				<li class="name"></li>
+				<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+			</ul>
 
-  <section class="top-bar-section">
-    <!-- Right Nav Section -->
-    <ul class="right">
+			<section class="top-bar-section">
+				<!-- Right Nav Section -->
+				<ul class="right">
+					<li class="has-dropdown">
+						<a>En Vivo</a>
+						<ul class="dropdown">
+							<li class="active"><a href="#tv">Television</a></li>
+							<li class="active"><a href="#radio">Radio</a></li>
+						</ul>
+					</li>
+				</ul>
 
-  
-</li>
-      <li class="has-dropdown">      
-        <a>En Vivo</a>
-        <ul class="dropdown">
-          <li class="active"><a href="#tv">Television</a></li>
-          <li class="active"><a href="#radio">Radio</a></li>
-        </ul>
-      </li>
-    </ul>
-
-    <!-- Left Nav Section -->
-    <ul class="left">
-    	<a href="#/home" class="button">Inicio</a>
-        <a href="#/newsDetail" class="button">Noticias</a>
-        <a href="#contacto" class="button">Contacto</a>
-    </ul>
-  </section>
-</nav>
-
-
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
+				<!-- Left Nav Section -->
+				<ul class="left">
+					<a href="#/home" class="button">Inicio</a>
+					<a href="#/newsDetail" class="button">Noticias</a>
+					<a href="#contacto" class="button">Contacto</a>
+				</ul>
+			</section>
+		</nav>
 		
 		<div class="small-12 large-12 large-centered columns" ng-view></div>
 	</div>
+	
+	<script>
+		$(document).foundation();
+	</script>
 </body>
 </html>

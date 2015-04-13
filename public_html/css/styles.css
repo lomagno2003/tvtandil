@@ -1,2 +1,8 @@
-.fondo {background-color: #224598}
+.fondo {
+	background-color: #224598
+}
 
+.centered-image {
+	display: block;
+	margin: 15px auto;
+}
