@@ -27,45 +27,58 @@
 </head>
 <body>
 	<div class="row" ng-app="app">
+	
+	<!-- Barra superior, logo Mad tv -->
+	<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+  </ul>
+  </nav>
+
+		<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">      
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+  
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+
+  
+</li>
+      <li class="has-dropdown">      
+        <a>En Vivo</a>
+        <ul class="dropdown">
+          <li class="active"><a href="#tv">Television</a></li>
+          <li class="active"><a href="#radio">Radio</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Left Nav Section -->
+    <ul class="left">
+    	<a href="#/home" class="button">Inicio</a>
+        <a href="#/newsDetail" class="button">Noticias</a>
+        <a href="#contacto" class="button">Contacto</a>
+    </ul>
+  </section>
+</nav>
 
 
 
-
-		<top-bar ng-controller="topBarController">
-		<ul class="title-area">     <!--Barra superior --> 
-			
-		</ul>
-
-		<top-bar-section> <!-- Right Nav Section -->
-		<div class="right logomad">
-			
-		</div>
-		</top-bar-section>
-		</top-bar>
-		<top-bar>
-		<ul class="title-area">
-			<li class="name"></li>
-			<li toggle-top-bar class="menu-icon"><a href="#">Menu</a></li>
-		</ul>
-
-		<top-bar-section> <!-- Right Nav Section -->
-		<ul class="left">
-			<li ><a class="menubtn" id="btnInicio" href="#/home">Inicio</a></li>
-			<li ><a class="menubtn" id="btnNewsDetail" href="#/newsDetail">Noticias</a></li>
-			
-		</ul>
-		</top-bar-section>
-		<top-bar-section>
-		<ul class="right">
-			
-			<li has-dropdown><a>Vivo</a>
-				<ul top-bar-dropdown>
-					<li class="dropbtn"><a href="#/tv">Tele</a></li>
-					<li class="dropbtn"><a href="#/radio">Radio</a></li>
-				</ul></li>
-		</ul>
-		</top-bar-section>
-		</top-bar>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		<div class="small-12 large-12 large-centered columns" ng-view></div>
 	</div>
 </body>
