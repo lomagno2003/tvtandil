@@ -1,2 +1,4 @@
 .fondo {background-color: #224598}
 
+.button {background-color: #123456;}
+.button:hover {background-color: #ccc; color: #333}
