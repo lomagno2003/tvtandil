@@ -1,9 +1,5 @@
-<div class="row">
-	<div class='small-8 small-centered columns'>
-		<div class="row" data-equalizer>
-			<div class="large-6 columns panel" ng-repeat="newsId in news" data-equalizer-watch>
-				<news-thumbnail news-id='newsId' foundation-synchronyzed />
-			</div>
+<div class="row ">
+		<div class="col-md-6 col-md-height" ng-repeat="newsId in news">
+			<news-thumbnail news-id='newsId' />
 		</div>
-	</div>
 </div>

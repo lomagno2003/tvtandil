@@ -1,7 +1,9 @@
 <a href="#/newsDetail/{{news.id}}">
-	<dl>
-		<dt>{{news.title}}</dt>
-		<img class="th centered-image" src="{{news.thumbnailUrl}}">
-		<dd>{{news.shortDescription}}</dd>
-	</dl>
+	<div class="panel panel-default">
+		<div class="panel-heading">{{news.title}}</div>
+		<div class="panel-body">
+			<img class="img-thumbnail" src="{{news.thumbnailUrl}}">
+			<p>{{news.shortDescription}}</p>
+		</div>
+	</div>
 </a>
