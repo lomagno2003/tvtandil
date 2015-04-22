@@ -6,22 +6,22 @@ app.config(function(RestangularProvider) {
 
 app.config(function($routeProvider) {
 	$routeProvider.when('/tv', {
-		templateUrl : 'app/tv/tv.html',
+		templateUrl : 'tv/tv.html',
 		controller : 'tvController'
 	}).when('/radio', {
-		templateUrl : 'app/radio/radio.html',
+		templateUrl : 'radio/radio.html',
 		controller : 'radioController'
 	}).when('/principal', {
-		templateUrl : 'app/principal/principal.html',
+		templateUrl : 'principal/principal.html',
 		controller : 'principalController'
 	}).when('/newsAbm', {
-		templateUrl : 'app/newsAbm/newsAbm.html',
+		templateUrl : 'newsAbm/newsAbm.html',
 		controller : 'newsAbmController'
 	}).when('/home', {
-		templateUrl : 'app/home/home.html',
+		templateUrl : 'home/home.html',
 		controller : 'homeController'
 	}).when('/newsDetail/:newsId', {
-		templateUrl : 'app/newsDetail/newsDetail.html',
+		templateUrl : 'newsDetail/newsDetail.html',
 		controller : 'newsDetailController'
 	}).otherwise({
 		redirectTo : '/home'
