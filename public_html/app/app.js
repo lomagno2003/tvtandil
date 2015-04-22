@@ -11,6 +11,9 @@ app.config(function($routeProvider) {
 	}).when('/radio', {
 		templateUrl : 'app/radio/radio.html',
 		controller : 'radioController'
+	}).when('/principal', {
+		templateUrl : 'app/principal/principal.html',
+		controller : 'principalController'
 	}).when('/newsAbm', {
 		templateUrl : 'app/newsAbm/newsAbm.html',
 		controller : 'newsAbmController'
