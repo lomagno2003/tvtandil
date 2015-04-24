@@ -8,7 +8,39 @@
 }
 
 
-.btn-per {min-height: 50px; width: 5em; border: none}
+
+/* ------------- Index, pagina comun a las secciones ---------- */
+
+.nav-cont {padding: 0}
+.btn-per {min-height: 50px; width: 5em; border: none; border-radius: 0; background-color: #358; color: #fff; font-size: 1.5em}
+.nav-per {background-color: #358; border: none; border-radius: 0;}
+.nav-per1 {background-color: #ddd; color: #358 }
+.logo2 img {height: 50px; diplay: inline-block; margin-left: -100px; margin-top: 0.8em}
 
 
-<!-- Pagina principal -->
+/* ------------- Index - Pagina de portada --------------- */ 
+
+.sangu {text-align: center}
+.logomad {margin: 0 auto;}                /* clases del logo de Mad Multimedios  */
+.sangu img {width: 65%; margin: 8%}
+
+
+.img-radio {margin-top: -1em; text-align: center; line-height: 8em}
+.img-tv {margin-top: 5em; text-align: center; line-height: 8em}
+.img-diario {margin-top: -1em; text-align: center; line-height: 8em}
+
+.btn-radio {width: 9em; display: inline-block; background: url(../img/iconos.jpg); background-repeat: no-repeat; background-position: top right; margin-left: 3em}
+.btn-radio:hover {background-position: bottom right; text-decoration: none}
+
+.btn-tv {width: 9em; display: inline-block; background: url(../img/iconos.jpg); background-repeat: no-repeat; background-position: top}
+.btn-tv:hover {background-position: bottom; text-decoration: none}
+
+.btn-diario {width: 9em; display: inline-block; background: url(../img/iconos.jpg); background-repeat: no-repeat; background-position: top left; margin-right: 3em}
+.btn-diario:hover {background-position: bottom left; text-decoration: none}
+
+
+
+
+
+
+

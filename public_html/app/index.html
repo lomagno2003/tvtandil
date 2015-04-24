@@ -1,48 +1,78 @@
 <!doctype html>
 <html class="no-js" lang="en">
-	<head>
-		<!-- Styles -->
-		<link type="text/css" rel="stylesheet" href="../vendor/bootstrap/bootstrap.css">
-		<link type="text/css" rel="stylesheet" href="../css/styles.css">
+<head>
+<!-- Styles -->
+<link type="text/css" rel="stylesheet"
+	href="../vendor/bootstrap/bootstrap.css">
+<link type="text/css" rel="stylesheet" href="../css/styles.css">
+
+<!-- Dependencies -->
+<script type="text/javascript" src="../vendor/jquery.js"></script>
+<script type="text/javascript" src="../vendor/underscore/underscore.js"></script>
+<script type="text/javascript" src="../vendor/angularjs/angular.js"></script>
+<script type="text/javascript"
+	src="../vendor/angularjs/angular-route.js"></script>
+<script type="text/javascript"
+	src="../vendor/restangular/restangular.js"></script>
+<script type="text/javascript" src="../vendor/bootstrap/bootstrap.js"></script>
+
+<script type="text/javascript" src="app.js"></script>
+
+<!-- Angular Controllers -->
+<script type="text/javascript" src="home/homeController.js"></script>
+<script type="text/javascript" src="newsDetail/newsDetailController.js"></script>
+<script type="text/javascript" src="newsAbm/newsAbmController.js"></script>
+<script type="text/javascript" src="principal/principalController.js"></script>
+
+<!-- Angular Directives -->
+<script type="text/javascript"
+	src="common/directives/newsDirective/newsDirective.js"></script>
+</head>
+<body>
+	<div class="row" ng-app="app">
+
+		<!-- Barra superior, logo Mad tv -->
+
+		<div class="container-fluid">
 		
-		<!-- Dependencies -->
-		<script type="text/javascript" src="../vendor/jquery.js"></script>
-		<script type="text/javascript" src="../vendor/underscore/underscore.js"></script>
-		<script type="text/javascript" src="../vendor/angularjs/angular.js"></script>
-		<script type="text/javascript" src="../vendor/angularjs/angular-route.js"></script>
-		<script type="text/javascript" src="../vendor/restangular/restangular.js"></script>
-		<script type="text/javascript" src="../vendor/bootstrap/bootstrap.js"></script>
-		
-		<script type="text/javascript" src="app.js"></script>
-		
-		<!-- Angular Controllers -->
-		<script type="text/javascript" src="home/homeController.js"></script>
-		<script type="text/javascript" src="newsDetail/newsDetailController.js"></script>
-		<script type="text/javascript" src="newsAbm/newsAbmController.js"></script>
-		<script type="text/javascript" src="principal/principalController.js"></script>
-		
-		<!-- Angular Directives -->
-		<script type="text/javascript" src="common/directives/newsDirective/newsDirective.js"></script>
-	</head>
-	<body>
-		<div class="row" ng-app="app">
-			<!-- Barra superior, logo Mad tv -->
-			<nav class="navbar navbar-default">
-				<div class="container-fluid">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-							<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
-						</button>
+			<div class="col-md-12 col-xs-12 nav-per1">
+			<div class="col-md-1 col-xs-1"></div>
+			<div class="btn-group col-md-10 col-xs-10">
+				<h1>Diario Digital</h1>
+				</div>
+				<div class="col-md-1 col-xs-1 logo2">
+					<img alt="logo" src="../img/logo-mad.png">
+				</div>
+			</div>
+									
+                  <!-- Nav Bar, con botones -->
+                  
+                  
+			<div class="col-md-12 col-xs-12 nav-cont">
+				<nav class="navbar navbar-default nav-per">
+					<div class="col-md-2 col-xs-2"></div>
+					<div class="btn-group col-md-8 col-xs-8" role="group"
+						aria-label="...">
+						<button href="" type="button" class="btn btn-default btn-per">Inicio</button>
+						<button href="" type="button" class="btn btn-default btn-per">Radio</button>
+						<button href="" class="btn btn-default btn-per">Contacto</button>
 					</div>
-					<div class="btn-group" role="group" aria-label="...">
-						<button type="button" class="btn btn-default btn-per">Left</button>
-						<button type="button" class="btn btn-default btn-per">Middle</button>
-						<button type="button" class="btn btn-default btn-per">Right</button>
+					<div class="col-md-2 col-xs-2"></div>
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed"
+								data-toggle="collapse"
+								data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span> <span
+									class="icon-bar"></span> <span class="icon-bar"></span> <span
+									class="icon-bar"></span>
+									</button>							
+						</div>  
+						
 					</div>
-			</nav>
-	
+			</div>
+
 			<div class="col-md-10 col-md-offset-1" ng-view></div>
 		</div>
-	</body>
+</body>
 </html>
