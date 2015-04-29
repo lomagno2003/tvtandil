@@ -5,7 +5,7 @@ app.directive('newsThumbnail', function($rootScope) {
 		scope : {
 			newsId : '=newsId'
 		},
-		templateUrl : 'app/common/directives/newsDirective/newsDirective.html',
+		templateUrl : 'common/directives/newsDirective/newsDirective.html',
 		link : function(scope, element, attrs) {
 			//TODO: The news information should be retrieved here from the server
 			scope.news = $rootScope.dummyNews[scope.newsId];
