@@ -1,0 +1,81 @@
+
+<div class="modal fade" id="newsSaved" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="myModalLabel">Noticia guardada</h4>
+			</div>
+			<div class="modal-body">La noticia fue guardada con éxito</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- News removed -->
+<div class="modal fade" id="removeDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="myModalLabel">Noticia Eliminada</h4>
+			</div>
+			<div class="modal-body">La noticia fue eliminada con éxito</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- New Image Modal -->
+<div class="modal fade" id="newImageModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="myModalLabel">Nueva Imágen</h4>
+			</div>
+			<div class="modal-body">
+				<input type="file" class="form-control" media-file="tmpImage"> <input type="text" class="form-control" placeholder="Epígrafe"
+					ng-model="tmpImage.epigraph"
+				>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal" ng-click="addImageCancel()">Cancelar</button>
+				<button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="addImageSubmit()">Agregar</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- New Video Modal -->
+<div class="modal fade" id="newVideoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="myModalLabel">Nuevo Video</h4>
+			</div>
+			<div class="modal-body">
+				<input type="text" class="form-control" placeholder="YouTube Link" ng-model="tmpVideo.url"> <input type="text" class="form-control"
+					placeholder="Epígrafe" ng-model="tmpVideo.epigraph"
+				>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal" ng-click="addVideoCancel()">Cancelar</button>
+				<button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="addVideoSubmit()">Agregar</button>
+			</div>
+		</div>
+	</div>
+</div>

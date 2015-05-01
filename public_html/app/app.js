@@ -1,7 +1,7 @@
 var app = angular.module('app', [ 'ngRoute', 'restangular']);
 
 app.config(function(RestangularProvider) {
-	RestangularProvider.setBaseUrl('http://186.136.230.149:8081/index.php/');
+	RestangularProvider.setBaseUrl('http://localhost:8081/index.php');
 });
 
 app.config(function($routeProvider) {
@@ -15,6 +15,9 @@ app.config(function($routeProvider) {
 		templateUrl : 'principal/principal.html',
 		controller : 'principalController'
 	}).when('/newsAbm', {
+		templateUrl : 'newsAbm/newsAbm.html',
+		controller : 'newsAbmController'
+	}).when('/newsAbm/:newsId', {
 		templateUrl : 'newsAbm/newsAbm.html',
 		controller : 'newsAbmController'
 	}).when('/home', {

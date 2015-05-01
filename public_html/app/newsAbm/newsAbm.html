@@ -1,35 +1,39 @@
 
 <div class="small-12 large-12">
-	<form class="form-group" ng-submit="guardar()">
+	<form class="form-group" ng-submit="save()">
 		<h3>Título</h3>
 		<input type="text" class="form-control" placeholder="Título" ng-model="actualNews.title">
 
 		<h3>Descripción</h3>
 		<textarea class="form-control" rows="8" ng-model="actualNews.description"></textarea>
 
-		<h3>Imágenes</h3>
-		<div class="panel panel-default" ng-repeat="media in actualNews.media">
-			<div class="panel-heading">
-				<div class="input-group"">
-				<span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span></span>
-					<input type="file" class="form-control" media-file="media">
-					<div class="input-group-btn">
-						<button class="btn btn-default" type="button" ng-disabled="!(media.fileData)" ng-click="deleteMedia(media)">
-							<span class="glyphicon glyphicon-trash"></span>
-						</button>
-					</div>
-				</div>
+		<h3 ng-if="actualNews.media.length>0">Media</h3>
+		<ul class="list-group">
+			<li class="list-group-item" ng-repeat="media in actualNews.media">
+				<span class="glyphicon glyphicon-picture" ng-if="media.type=='NEW_IMAGE'"></span>
+				<span class="glyphicon glyphicon-facetime-video" ng-if="media.type=='UPLOADED_VIDEO'"></span>
+				{{media.epigraph}} 
+				<span class="pull-right">
+					<button class="btn btn-xs btn-warning" ng-click="removeMedia(media)">
+						<span class="glyphicon glyphicon-trash"></span>
+					</button>
+				</span>
+			</li>
+		</ul>
+		<div class="btn-group btn-group-justified" role="group" aria-label="...">
+			<div class="btn-group" role="group">
+				<span class="btn btn-default" data-toggle="modal" data-target="#newImageModal"> <span class="glyphicon glyphicon-picture"></span> Agregar
+					Imágen
+				</span>
 			</div>
-			<div class="panel-body">
-				<div class="input-group">
-					<span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-font" aria-hidden="true"></span></span>
-					<input type="text" class="form-control" placeholder="Epígrafe" ng-disabled="!(media.fileData)" ng-model="media.epigraph">
-				</div>
+			<div class="btn-group" role="group">
+				<span class="btn btn-default" data-toggle="modal" data-target="#newVideoModal"> <span class="glyphicon glyphicon-facetime-video"></span>
+					Agregar Video
+				</span>
 			</div>
 		</div>
 
-		<div class="input-group">
-			<input type="submit" class="btn" value="Guardar">
-		</div>
+		<input type="submit" class="btn btn-primary" value="Guardar" data-toggle="modal" data-target="#newsSaved">
+		<input type="button" class="btn btn-danger pull-right" ng-if="actualNews.id" ng-click="remove()" value="Eliminar" data-toggle="modal" data-target="#removeDialog">
 	</form>
 </div>

@@ -12,7 +12,6 @@ app.directive("mediaFile", [ function() {
 					reader.onload = function(loadEvent) {
 						scope.$apply(function() {
 							scope.mediaFile.fileData = loadEvent.target.result;
-							scope.mediaFile.type = "NEW_IMAGE";
 						});
 					}
 					reader.readAsDataURL(changeEvent.target.files[0]);
