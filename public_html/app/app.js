@@ -1,4 +1,4 @@
-var app = angular.module('app', [ 'ngRoute', 'restangular']);
+var app = angular.module('app', [ 'ngRoute', 'restangular', 'ui.bootstrap']);
 
 app.config(function(RestangularProvider) {
 	RestangularProvider.setBaseUrl('http://localhost:8081/index.php');
@@ -39,7 +39,7 @@ app.run(function($rootScope) {
 			"title" : "Titulo 1",
 			"media":[{
 				"epigraph":"Picture 1",
-			     "url" : "http://th02.deviantart.net/fs71/200H/i/2010/255/0/6/dsasda_by_caglarocal-d2yl1zw.jpg",
+			     "url" : "http://www.fondosescritoriogratis.net/wp-content/uploads/2010/12/paisaje-de-vietnam.jpg",
 			},
 			{
 				"epigraph":"Picture 2",

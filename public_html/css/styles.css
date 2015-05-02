@@ -7,7 +7,8 @@
 	margin: 15px auto;
 }
 
-
+/* Configuration to make ui-bootstrap works properly */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
 /* ------------- Index, pagina comun a las secciones ---------- */
 
@@ -17,10 +18,28 @@
 .nav-per1 {background-color: #ddd; color: #358 }
 .logo2 img {height: 50px; diplay: inline-block; margin-left: -100px; margin-top: 0.8em}
 
+/* ------------- Home--------------- */
+/*Esta clase es la encargada de cortar los thumbnails de las noticias
+en la seccion Home. El atributo background-image deberá ser seteado por
+cada elemento*/
+.img-th {
+    width: auto;
+    height: 350px;
+/*     background-image: url("{{news.thumbnailUrl}}"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+/* ------------- News Detail--------------- */
+.carousel-img img {
+  width: auto;
+  height: 225px;
+  max-height: 225px;
+}
 
 /* ------------- Index - Pagina de portada --------------- */ 
 
-.sangu {text-align: center}
 .logomad {margin: 0 auto;}                /* clases del logo de Mad Multimedios  */
 .sangu img {width: 65%; margin: 8%}
 

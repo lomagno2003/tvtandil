@@ -1,15 +1,14 @@
-<div class="small-12 large-6  columns">
-<h1>{{actualNews.title}}</h1>
-<p>{{actualNews.description}}</p>
+<div class="col-md-8">
+	<h1>{{actualNews.title}}</h1>
+	<p>{{actualNews.description}}</p>
 
-<div class="panel">
-<!-- TODO: Deprecated orbit for gallery, look for other -->
-	<ul class="panel" data-orbit>
-	  <li ng-repeat="media in actualNews.media">
-	    <img src="{{media.url}}" alt="slide 1"/>
-	    <div class="orbit-caption">
-	    	{{media.epigraph}}
-	    </div>
-	  </li>
-	</ul>
+	<carousel> 
+		<slide ng-repeat="media in actualNews.media" active="media.active"> 
+			<div class="img-th" style="background-image:url({{media.url}})"></div>
+			<div class="carousel-caption">
+				<h4>Slide {{$index}}</h4>
+				<p>{{media.epigraph}}</p>
+			</div>
+		</slide> 
+	</carousel>
 </div>

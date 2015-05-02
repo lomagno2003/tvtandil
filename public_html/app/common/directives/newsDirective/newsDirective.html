@@ -1,8 +1,9 @@
-<a href="#/newsDetail/{{news.id}}">
+<a style="color: inherit; text-decoration:none;" href="#/newsDetail/{{news.id}}">
 	<div class="panel panel-default">
-		<div class="panel-heading">{{news.title}}</div>
-		<div class="panel-body sangu">
-			<img class="img-thumbnail sangu2" src="{{news.thumbnailUrl}}">
+		<div class="panel-body">
+			<div class="img-th" style="background-image:url({{news.thumbnailUrl}})"></div>
+			<h3>{{news.title}}</h3>
+			<h4>Publicado: TODO</h4>
 			<p>{{news.shortDescription}}</p>
 		</div>
 	</div>
