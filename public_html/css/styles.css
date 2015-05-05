@@ -1,5 +1,6 @@
-.fondo {
-	background-color: #224598
+body {
+	background-size: cover;
+	background-image: url("../img/fondo-noticias.png");
 }
 
 .centered-image {
@@ -14,21 +15,64 @@
 
 .nav-cont {padding: 0}
 .btn-per {min-height: 50px; width: 5em; border: none; border-radius: 0; background-color: #358; color: #fff; font-size: 1.5em}
-.nav-per {background-color: #358; border: none; border-radius: 0;}
+.nav-per {background-color: #358; border: none; border-radius: 0; margin-bottom: 0px;}
 .nav-per1 {background-color: #ddd; color: #358 }
 .logo2 img {height: 50px; diplay: inline-block; margin-left: -100px; margin-top: 0.8em}
 
-/* ------------- Home--------------- */
-/*Esta clase es la encargada de cortar los thumbnails de las noticias
-en la seccion Home. El atributo background-image deberá ser seteado por
-cada elemento*/
-.img-th {
+/* ------------- News Thumbails--------------- */
+.news-thumbnails-container {
+	background: rgba(240, 240, 240, .7);
+}
+
+.news-thumbnails-container-title {
+	color: #DCE800;
+}
+
+.news-thumbnail {
+	color: inherit; 
+	text-decoration:none;
+}
+.news-thumbnail:hover {
+	color: inherit; 
+	text-decoration:none;
+}
+
+.news-thumbnail-panel {
+	padding: 4px;
+	background: #F5F5F5
+}
+
+.news-thumbnail-image {
     width: auto;
-    height: 350px;
+    height: 200px;
 /*     background-image: url("{{news.thumbnailUrl}}"); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+}
+
+.news-thumbnail-title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+
+.news-thumbnail-date {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.news-thumbnail-description {
+	line-height:15px; 
+	height:150px;
+	overflow: hidden;
+	
+	border: 0;
+	background-color: inherit;
+	
+	padding:0;
+	margin:10px 0 0;
+	
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ------------- News Detail--------------- */

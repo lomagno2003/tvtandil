@@ -1,10 +1,10 @@
-<a style="color: inherit; text-decoration:none;" href="#/newsDetail/{{news.id}}">
+<a class="news-thumbnail" href="#/newsDetail/{{news.id}}">
 	<div class="panel panel-default">
-		<div class="panel-body">
-			<div class="img-th" style="background-image:url({{news.thumbnailUrl}})"></div>
-			<h3>{{news.title}}</h3>
-			<h4>Publicado: TODO</h4>
-			<p>{{news.shortDescription}}</p>
+		<div class="panel-body news-thumbnail-panel">
+			<div class="news-thumbnail-image" style="background-image:url({{news.thumbnailUrl}})"></div>
+			<h2 class="news-thumbnail-title"><b>{{news.title}}</b></h2>
+			<span class="news-thumbnail-date"><b>Publicado:</b> 21 de Abril</span>
+			<pre class="news-thumbnail-description">{{news.description}}</pre>
 		</div>
 	</div>
 </a>
