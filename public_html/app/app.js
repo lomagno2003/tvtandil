@@ -1,4 +1,4 @@
-var app = angular.module('app', [ 'ngRoute', 'restangular', 'ui.bootstrap']);
+var app = angular.module('app', [ 'ngRoute', 'restangular', 'ui.bootstrap', 'slick']);
 
 app.config(function(RestangularProvider) {
 	RestangularProvider.setBaseUrl('http://localhost:8081/index.php');

@@ -1,8 +1,11 @@
-<div class="row news-thumbnails-container">
-	<h1 class="news-thumbnails-container-title"><b>Destacados</b></h1>
-
-	<div class="col-md-4 col-md-height" ng-repeat="newsId in news">
-		<news-thumbnail news-id='newsId' />
+<div class="row news-background">
+	<div class="col-md-10 col-md-offset-1">
+		<div class="row news-thumbnails-container">
+			<h1 class="news-thumbnails-container-title"><b>Destacados</b></h1>
+		
+			<div class="col-md-4 col-md-height" ng-repeat="newsId in news">
+				<news-thumbnail news-id='newsId' />
+			</div>
+		</div>
 	</div>
 </div>
-

@@ -3,7 +3,9 @@
 <head>
 <!-- Styles -->
 <link type="text/css" rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="../vendor/slick/slick.css">
 <link type="text/css" rel="stylesheet" href="../css/styles.css">
+<link type="text/css" rel="stylesheet" href="../vendor/slick/slick-theme.css">
 
 <!-- Dependencies -->
 <script type="text/javascript" src="../vendor/jquery.js"></script>
@@ -13,7 +15,8 @@
 <script type="text/javascript" src="../vendor/restangular/restangular.js"></script>
 <script type="text/javascript" src="../vendor/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../vendor/ui-bootstrap/js/ui-bootstrap-tpls-0.13.0.min.js"></script>
-
+<script type="text/javascript" src="../vendor/slick/slick.min.js"></script>
+<script type="text/javascript" src="../vendor/angular-slick/slick.js"></script>
 
 <script type="text/javascript" src="app.js"></script>
 
@@ -22,19 +25,19 @@
 <script type="text/javascript" src="newsDetail/newsDetailController.js"></script>
 <script type="text/javascript" src="newsAbm/newsAbmController.js"></script>
 <script type="text/javascript" src="principal/principalController.js"></script>
+<script type="text/javascript" src="tv/tvController.js"></script>
 
 <!-- Angular Directives -->
 <script type="text/javascript" src="common/directives/newsDirective/newsDirective.js"></script>
 <script type="text/javascript" src="common/directives/mediaFile/mediaFile.js"></script>
 
 </head>
-<body class="app-body">
+<body>
 	<div class="row" ng-app="app">
 
 		<!-- Barra superior, logo Mad tv -->
 
 		<div class="container-fluid">
-
 			<div class="col-md-12 col-xs-12 nav-per1">
 				<div class="col-md-1 col-xs-1"></div>
 				<div class="btn-group col-md-10 col-xs-10">
@@ -46,8 +49,6 @@
 			</div>
 
 			<!-- Nav Bar, con botones -->
-
-
 			<div class="col-md-12 col-xs-12 nav-cont">
 				<nav class="navbar navbar-default nav-per">
 					<div class="col-md-2 col-xs-2"></div>
@@ -63,11 +64,14 @@
 								<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
 							</button>
 						</div>
-
 					</div>
+				</nav>
 			</div>
 
-			<div class="col-md-10 col-md-offset-1" ng-view></div>
+			<div class="col-md-12 body-view" ng-view></div>
+			
+			<!-- Footer -->
+			<div class="col-md-12 body-view" style="height:150px; background-color: #6E4991;"></div>
 		</div>
 		
 		<div ng-include="'newsAbm/newsAbmModals.html'"></div>

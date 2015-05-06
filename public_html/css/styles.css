@@ -1,6 +1,5 @@
-.app-body {
-	background-size: cover;
-	background-image: url("../img/fondo-noticias.png");
+.body-view{
+	padding: 0;
 }
 
 .centered-image {
@@ -19,6 +18,10 @@
 .nav-per1 {background-color: #ddd; color: #358 }
 .logo2 img {height: 50px; diplay: inline-block; margin-left: -100px; margin-top: 0.8em}
 
+.news-background {
+	background-size: cover;
+	background-image: url("../img/fondo-noticias.png");
+}
 /* ------------- News Thumbails--------------- */
 .news-thumbnails-container {
 	background: rgba(240, 240, 240, .7);
@@ -82,8 +85,14 @@
   max-height: 225px;
 }
 
-/* ------------- Index - Pagina de portada --------------- */ 
+/* ------------- Streaming--------------- */
+.black-background {
+	background-image: url("../img/fondo-negro.png");
+	background-repeat: repeat-y;
+	background-size: cover;
+}
 
+/* ------------- Index - Pagina de portada --------------- */ 
 .logomad {margin: 0 auto;}                /* clases del logo de Mad Multimedios  */
 .sangu img {width: 65%; margin: 8%}
 
