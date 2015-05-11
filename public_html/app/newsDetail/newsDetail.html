@@ -1,14 +1,12 @@
 <div class="col-md-8">
 	<h1>{{actualNews.title}}</h1>
 	<p>{{actualNews.description}}</p>
-
-	<carousel> 
-		<slide ng-repeat="media in actualNews.media" active="media.active"> 
-			<div class="img-th" style="background-image:url({{media.url}})"></div>
-			<div class="carousel-caption">
-				<h4>Slide {{$index}}</h4>
-				<p>{{media.epigraph}}</p>
-			</div>
-		</slide> 
-	</carousel>
+ 
+	<slick infinite=false slides-to-show=1>
+		<div ng-repeat="media in actualNews.media">
+			<img class="carousel-img" src="{{media.url}}">
+			<h4>Slide {{$index}}</h4>
+			<p>{{media.epigraph}}</p>
+		</div>
+	</slick>
 </div>
