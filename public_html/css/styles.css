@@ -111,9 +111,11 @@
 
 .btn-tv {width: 190px; display: inline-block; background: url(../img/btntv.png); background-repeat: no-repeat; height: 190px}
 .btn-tv:hover {}
+.btn-tv span {display: none}
 
 .btn-diario {width: 190px; display: inline-block; background: url(../img/btndiario.png); background-repeat: no-repeat; height: 190px}
 .btn-diario:hover {}
+
 
 
 
