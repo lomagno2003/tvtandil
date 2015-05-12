@@ -2,11 +2,6 @@
 	padding: 0;
 }
 
-.centered-image {
-	display: block;
-	margin: 15px auto;
-}
-
 /* Configuration to make ui-bootstrap works properly */
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
@@ -22,6 +17,49 @@
 	background-size: cover;
 	background-image: url("../img/fondo-noticias.png");
 }
+
+.app-container {
+	padding:0;
+}
+
+/* ------------- Nav Bar --------------- */
+
+.nav-bar-top-container{
+	background-color: #ddd; 
+	color: #358;
+	margin:0; 
+}
+
+.nav-bar-bottom-container{
+	background-color: #358; 
+	border: none; 
+	border-radius: 0; 
+	margin-bottom: 0px;
+	margin:0; 
+}
+
+.nav-bar-title{
+	margin-top:30px;
+/* 	vertical-align: middle; */
+	float: left;
+	font-weight: bold;
+}
+
+.nav-bar-icon{
+	margin-top:30px;
+	vertical-align: middle;
+	width: auto;
+	height: 36px;
+	max-height: 36px;
+}
+
+.nav-bar-logo {
+	margin-top:10px;
+/* 	vertical-align: middle; */
+	height: 70px;
+	display: inline-block;
+}
+
 /* ------------- News Thumbails--------------- */
 .news-thumbnails-container {
 	background: rgba(240, 240, 240, .7);
@@ -79,7 +117,7 @@
 }
 
 /* ------------- News Detail--------------- */
-.carousel-img img {
+.carousel-img {
   width: auto;
   height: 225px;
   max-height: 225px;
