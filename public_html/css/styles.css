@@ -1,6 +1,4 @@
-.body-view{
-	padding: 0;
-}
+.body-view {padding: 0; font-family: 'Hind', sans-serif; font-weight: 400}
 
 /* Configuration to make ui-bootstrap works properly */
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
@@ -8,9 +6,9 @@
 /* ------------- Index, pagina comun a las secciones ---------- */
 
 .nav-cont {padding: 0}
-.btn-per {min-height: 50px; width: 5em; border: none; border-radius: 0; background-color: #358; color: #fff; font-size: 1.5em}
+.btn-per {min-height: 2em; line-height: 2em; width: 5em; border: none; border-radius: 0; background-color: #358; color: #fff; font-size: 1.5em; font-family: 'Hind', sans-serif;}
 .nav-per {background-color: #358; border: none; border-radius: 0; margin-bottom: 0px;}
-.nav-per1 {background-color: #ddd; color: #358 }
+.nav-per1 {background-color: #ddd; color: #358;}
 .logo2 img {height: 50px; diplay: inline-block; margin-left: -100px; margin-top: 0.8em}
 
 .news-background {background: url("../img/noticias-fondo.png") no-repeat center;}
@@ -18,6 +16,8 @@
 .app-container {
 	padding:0;
 }
+
+.footer {background: url(../img/footer-fondo.png) center 100%; margin: 0}
 
 /* ------------- Nav Bar --------------- */
 
@@ -39,7 +39,8 @@
 	margin-top:30px;
 /* 	vertical-align: middle; */
 	float: left;
-	font-weight: bold;
+	font-weight: 600;
+	font-family: 'Hind', sans-serif;
 }
 
 .nav-bar-icon{
