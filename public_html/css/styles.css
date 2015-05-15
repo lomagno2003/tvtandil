@@ -6,7 +6,7 @@
 /* ------------- Index, pagina comun a las secciones ---------- */
 
 .nav-cont {padding: 0}
-.btn-per {min-height: 2em; line-height: 2em; width: 5em; border: none; border-radius: 0; background-color: #358; color: #fff; font-size: 1.5em; font-family: 'Hind', sans-serif;}
+.btn-per {min-height: 2em; line-height: 2em; width: 5em; border: none; border-radius: 0; background-color: #1E3F66; color: #fff; font-size: 1.5em; font-family: 'Hind', sans-serif;}
 .nav-per {background-color: #358; border: none; border-radius: 0; margin-bottom: 0px;}
 .nav-per1 {background-color: #ddd; color: #358;}
 .logo2 img {height: 50px; diplay: inline-block; margin-left: -100px; margin-top: 0.8em}
@@ -16,16 +16,17 @@
 
 .iconos {margin-top: 7px}
 .iconos a {margin: 0 4px 0 0; border: none}
+
 .icono-radio {width: 40px; height: 40px; display: inline-block; background: url(../img/radioicono.png) top; background-size: cover}
 .icono-radio:hover {background-position: bottom }
+
 .icono-tv {width: 40px; height: 40px; display: inline-block; background: url(../img/tvicono.png) top; background-size: cover}
 .icono-tv:hover {background-position: bottom}
+
 .icono-diario {width: 40px; height: 40px; display: inline-block; background: url(../img/diarioicono.png) top; background-size: cover}
 .icono-diario:hover {background-position: bottom;}
 
-.app-container {
-	padding:0;
-}
+.app-container {padding:0;}
 
 .footer {background: url(../img/footer-fondo.png) center 100%; margin: 0}
 
@@ -38,7 +39,7 @@
 }
 
 .nav-bar-bottom-container{
-	background-color: #358; 
+	background-color: #1E3F66; 
 	border: none; 
 	border-radius: 0; 
 	margin-bottom: 0px;
@@ -74,7 +75,7 @@
 }
 
 .news-thumbnails-container-title {
-	color: #DCE800;
+	color: #EF9400;
 }
 
 .news-thumbnail {
@@ -147,7 +148,7 @@
 
 
 
-.fondo {background: url(../img/fondo.svg) center no-repeat; background-size: cover;}
+.fondo {background: url(../img/fondo.svg) center repeat-y; background-size: cover;}
 
 .img-radio {margin-top: -1em; text-align: center; line-height: 8em}
 .img-tv {margin-top: 5em; text-align: center; line-height: 8em}
