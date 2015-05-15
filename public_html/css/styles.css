@@ -13,6 +13,16 @@
 
 .news-background {background: url("../img/noticias-fondo.png") no-repeat center;}
 
+
+.iconos {margin-top: 7px}
+.iconos a {margin: 0 4px 0 0; border: none}
+.icono-radio {width: 40px; height: 40px; display: inline-block; background: url(../img/radioicono.png) top; background-size: cover}
+.icono-radio:hover {background-position: bottom }
+.icono-tv {width: 40px; height: 40px; display: inline-block; background: url(../img/tvicono.png) top; background-size: cover}
+.icono-tv:hover {background-position: bottom}
+.icono-diario {width: 40px; height: 40px; display: inline-block; background: url(../img/diarioicono.png) top; background-size: cover}
+.icono-diario:hover {background-position: bottom;}
+
 .app-container {
 	padding:0;
 }
@@ -147,7 +157,6 @@
 
 .btn-tv {width: 190px; display: inline-block; background: url(../img/btntv.png); background-repeat: no-repeat; height: 190px}
 .btn-tv:hover {}
-.btn-tv span {display: none}
 
 .btn-diario {width: 190px; display: inline-block; background: url(../img/btndiario.png); background-repeat: no-repeat; height: 190px}
 .btn-diario:hover {}
