@@ -11,7 +11,7 @@
 .nav-per1 {background-color: #ddd; color: #358;}
 .logo2 img {height: 50px; diplay: inline-block; margin-left: -100px; margin-top: 0.8em}
 
-.news-background {background: url("../img/noticias-fondo.png") no-repeat center;}
+.news-background {background: url("../img/noticias-fondo.png") no-repeat center; margin-right: 0}
 
 
 .iconos {margin-top: 7px}
@@ -136,6 +136,7 @@
 	background-image: url("../img/fondo-negro.png");
 	background-repeat: repeat-y;
 	background-size: cover;
+	margin-right: 0;
 }
 
 /* ------------- Index - Pagina de portada --------------- */ 
@@ -152,14 +153,14 @@
 .img-tv {margin-top: 5em; text-align: center; line-height: 8em}
 .img-diario {margin-top: -1em; text-align: center; line-height: 8em}
 
-.btn-radio {width: 190px; display: inline-block; background: url(../img/btnradio.png); background-repeat: no-repeat; height: 190px}
-.btn-radio:hover {}
+.btn-radio {height: 8em; width: 8em; display: inline-block; background: url(../img/btnradio.png) top; background-size: cover}
+.btn-radio:hover {background-position: bottom}
 
-.btn-tv {width: 190px; display: inline-block; background: url(../img/btntv.png); background-repeat: no-repeat; height: 190px}
-.btn-tv:hover {}
+.btn-tv {height: 8em; width: 8em; display: inline-block; background: url(../img/btntv.png) top; background-size: cover}
+.btn-tv:hover {background-position: bottom}
 
-.btn-diario {width: 190px; display: inline-block; background: url(../img/btndiario.png); background-repeat: no-repeat; height: 190px}
-.btn-diario:hover {}
+.btn-diario {height: 8em; width: 8em; display: inline-block; background: url(../img/btndiario.png) top; background-size: cover}
+.btn-diario:hover {background-position: bottom}
 
 
 
