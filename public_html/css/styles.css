@@ -14,17 +14,17 @@
 .news-background {background: url("../img/noticias-fondo.png") no-repeat center; margin-right: 0}
 
 
-.iconos {margin-top: 7px}
+.iconos {margin-top: 7px; margin-left: -3em}
 .iconos a {margin: 0 4px 0 0; border: none}
 
-.icono-radio {width: 40px; height: 40px; display: inline-block; background: url(../img/radioicono.png) top; background-size: cover}
-.icono-radio:hover {background-position: bottom }
+.icono-radio {width: 48px; height: 40px; display: inline-block; background: url(../img/iconos.png) left; background-size: cover}
+.icono-radio:hover {width: 48px; height: 40px; display: inline-block; background: url(../img/iconoshover.png) left; background-size: cover}
 
-.icono-tv {width: 40px; height: 40px; display: inline-block; background: url(../img/tvicono.png) top; background-size: cover}
-.icono-tv:hover {background-position: bottom}
+.icono-tv {width: 48px; height: 40px; display: inline-block; background: url(../img/iconos.png) center; background-size: cover}
+.icono-tv:hover {width: 48px; height: 40px; display: inline-block ;background: url(../img/iconoshover.png) center; background-size: cover}
 
-.icono-diario {width: 40px; height: 40px; display: inline-block; background: url(../img/diarioicono.png) top; background-size: cover}
-.icono-diario:hover {background-position: bottom;}
+.icono-diario {width: 48px; height: 40px; display: inline-block; background: url(../img/iconos.png) right; background-size: cover}
+.icono-diario:hover {width: 48px; height: 40px; display: inline-block; background: url(../img/iconoshover.png) right; background-size: cover}
 
 .app-container {padding:0;}
 
