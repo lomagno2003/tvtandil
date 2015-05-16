@@ -143,25 +143,26 @@
 /* ------------- Index - Pagina de portada --------------- */ 
 
 
-.logomad-col {margin: 3em auto 0 auto; text-align: center;}            /* clases del logo de Mad Multimedios  */
-.logomad {display: inline-block}               
+.logomad-col {margin: 3em auto 7em auto; text-align: center;}            /* clases del logo de Mad Multimedios  */
+.logo-mad {height: 20em; width: 30em; display: inline-block; background: url(../img/logo-mad.png) center no-repeat; background-size: 100%} 
 
 
 
 .fondo {background: url(../img/fondo.svg) center repeat-y; background-size: cover;}
 
-.img-radio {margin-top: -1em; text-align: center; line-height: 8em}
-.img-tv {margin-top: 5em; text-align: center; line-height: 8em}
-.img-diario {margin-top: -1em; text-align: center; line-height: 8em}
+.img-radio {margin-top: -5em; text-align: center; line-height: 8em}
+.img-tv {margin-top: -1em; text-align: center; line-height: 8em}
+.img-diario {margin-top: -5em; text-align: center; line-height: 8em}
 
-.btn-radio {height: 8em; width: 8em; display: inline-block; background: url(../img/btn-radio.png) top; background-size: cover}
+.btn-radio {height: 12em; width: 12em; display: inline-block; background: url(../img/btn-radio.png) top; background-size: cover}
 .btn-radio:hover {background-position: bottom}
 
-.btn-tv {height: 8em; width: 8em; display: inline-block; background: url(../img/btntv.png) top; background-size: cover}
+.btn-tv {height: 12em; width: 12em; display: inline-block; background: url(../img/btn-tv.png) top; background-size: cover}
 .btn-tv:hover {background-position: bottom}
 
-.btn-diario {height: 8em; width: 8em; display: inline-block; background: url(../img/btndiario.png) top; background-size: cover}
+.btn-diario {height: 12em; width: 12em; display: inline-block; background: url(../img/btn-diario.png) top; background-size: cover}
 .btn-diario:hover {background-position: bottom}
+
 
 
 
