@@ -6,7 +6,7 @@
 /* ------------- Index, pagina comun a las secciones ---------- */
 
 .nav-cont {padding: 0}
-.btn-per {min-height: 2em; line-height: 2em; width: 5em; border: none; border-radius: 0; background-color: #1E3F66; color: #fff; font-size: 1.5em; font-family: 'Hind', sans-serif;}
+.btn-per {min-height: 2em; line-height: 2em; width: 6em; border: none; border-radius: 0; background-color: #1E3F66; color: #fff; font-size: 1.5em; font-family: 'Hind', sans-serif;}
 .nav-per {background-color: #358; border: none; border-radius: 0; margin-bottom: 0px;}
 .nav-per1 {background-color: #ddd; color: #358;}
 .logo2 img {height: 50px; diplay: inline-block; margin-left: -100px; margin-top: 0.8em}
