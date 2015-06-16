@@ -28,6 +28,7 @@
 <script type="text/javascript" src="newsAbm/newsAbmController.js"></script>
 <script type="text/javascript" src="tv/tvController.js"></script>
 <script type="text/javascript" src="servicios/serviciosController.js"></script>
+<script type="text/javascript" src="login/loginController.js"></script>
 
 <!-- Angular Directives -->
 <script type="text/javascript" src="common/directives/newsDirective/newsDirective.js"></script>
@@ -68,9 +69,11 @@
 					<a href="#/radio" class="icono-radio"></a>
 					<a href="#/tv" class="icono-tv"></a>
 					<a href="#/diario" class="icono-diario"></a>
-					<!-- www.TuTiempo.net - Ancho:123px - Alto:77px -->
-<div class="clima" id="TT_tCfkk1EkklSrn9cKMfxzzDjzDtlKL4nlrt1dkZyoa1j"><a href="http://www.tutiempo.net">El Tiempo</a></div>
-<script type="text/javascript" src="http://www.tutiempo.net/widget/eltiempo_tCfkk1EkklSrn9cKMfxzzDjzDtlKL4nlrt1dkZyoa1j"></script>
+					<!-- weather widget start -->
+					<a href="//booked.es/weather/Tandil-w604783">
+						<img class="navbar-weather-widget" src="//w.bookcdn.com/weather/picture/21_w604783_1_4_ecf0f1_250_bdc3c7_9da2a6_ffffff_1_2071c9_ffffff_0_3.png?scode=124&domid=w209" />
+					</a>
+					<!-- weather widget end -->
 				</div>
 			</div>
 		</nav>
@@ -80,7 +83,6 @@
 		<!-- Footer -->
 		<footer class="col-md-12 body-view footer" style="height: 150px; background-color: #6E4991;"></footer>
 
-		<div ng-include="'newsAbm/newsAbmModals.html'"></div>
 	</div>
 </body>
 </html>

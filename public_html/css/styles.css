@@ -91,6 +91,10 @@ body {
 	display: inline-block;
 }
 
+.nav-bar-weather-widget {
+	vertical-align: baseline;
+}
+
 /* ------------- News Thumbails--------------- */
 .news-thumbnails-container {
 	background: rgba(211, 211, 211, .8);

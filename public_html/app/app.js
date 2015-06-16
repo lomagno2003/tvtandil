@@ -14,7 +14,7 @@ app.config(function($routeProvider) {
 	}).when('/servicios', {
 		templateUrl : 'servicios/servicios.html',
 		controller : 'serviciosController'
-	}).when('/contacto', {
+	}).when('/login', {
 		templateUrl : 'login/login.html',
 		controller : 'loginController'
 	}).when('/newsAbm', {

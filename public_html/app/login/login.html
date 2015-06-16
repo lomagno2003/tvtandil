@@ -1,5 +1,20 @@
+<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha3.js"></script>
+
 <div class="row">
-	<div class="col-md-10 col-md-offset-1">
-		Dos inputs
+	<div class="col-md-8 col-md-offset-2">
+		<form ng-submit="submit()">
+			<div class="page-header">
+				<h1>
+					Acceso a modo administrador
+				</h1>
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon" id="password">Password</span> 
+				<input type="password" class="form-control" ng-model="inputPassword" placeholder="Password" aria-describedby="password">
+				<span class="input-group-btn">
+					<button class="btn btn-default" type="submit">Login</button>
+				</span>
+			</div>
+		</form>
 	</div>
 </div>
