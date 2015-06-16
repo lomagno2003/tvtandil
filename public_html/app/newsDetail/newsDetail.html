@@ -1,12 +1,20 @@
-<div class="col-md-8">
-	<h1>{{actualNews.title}}</h1>
-	<p>{{actualNews.description}}</p>
- 
-	<slick infinite=false slides-to-show=1>
-		<div ng-repeat="media in actualNews.media">
-			<img class="carousel-img" src="{{media.url}}">
-			<h4>Slide {{$index}}</h4>
-			<p>{{media.epigraph}}</p>
+<div class="row">
+	<div class="col-md-7 col-md-offset-1">	 
+		<h1>{{actualNews.title}}</h1>
+		
+		<slick class="news-detail-slider" dots=true infinite=false slides-to-show=1>
+			<div class="news-detail-slider-item" ng-repeat="media in actualNews.media">
+				<img class="carousel-img" src="{{media.url}}">
+				<h4>Slide {{$index}}</h4>
+				<p>{{media.epigraph}}</p>
+			</div>
+		</slick>
+
+		<p>{{actualNews.description}}</p>
+	</div>
+	<div class="col-md-3">
+		<div ng-repeat="advertising in advertisings">
+			<img alt="" ng-src="../img/advertisings/{{advertising}}">
 		</div>
-	</slick>
+	</div>
 </div>

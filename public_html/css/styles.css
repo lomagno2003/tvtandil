@@ -7,7 +7,13 @@ body {
   margin-bottom: 60px;
 }
 
-.body-view {padding: 0; font-family: 'Hind', sans-serif; font-weight: 400; margin-top: 130px}
+.body-view {
+	padding: 0; 
+	font-family: 'Hind', sans-serif; 
+	font-weight: 400; 
+	margin-top: 130px;
+	margin-bottom: 90px;
+}
 
 /* Configuration to make ui-bootstrap works properly */
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
@@ -86,7 +92,9 @@ body {
 
 /* ------------- News Thumbails--------------- */
 .news-thumbnails-container {
-	background: rgba(240, 240, 240, .7);
+	background: rgba(211, 211, 211, .8);
+	/* Shadows on both sides */
+	box-shadow: 10px 0 5px rgba(100, 100, 100, .5), -10px 0 5px rgba(100, 100, 100, .5);
 }
 
 .news-thumbnails-container-title {
@@ -128,7 +136,7 @@ body {
 
 .news-thumbnail-description {
 	line-height:15px; 
-	height:150px;
+	height:45px;
 	overflow: hidden;
 	
 	border: 0;
@@ -145,6 +153,16 @@ body {
   width: auto;
   height: 225px;
   max-height: 225px;
+}
+
+.news-detail-slider {
+	border: solid;
+}
+
+.news-detail-slider-item {
+	width:200px;
+	height:200px;
+	margin:10px;
 }
 
 /* ------------- Streaming--------------- */

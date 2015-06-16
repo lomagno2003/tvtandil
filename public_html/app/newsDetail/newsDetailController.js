@@ -6,4 +6,6 @@ app.controller('newsDetailController', function($scope, $rootScope, $routeParams
 	$scope.sync = function(){
 		$('.carousel').carousel();
 	};
+	
+	$scope.advertisings = $rootScope.advertisings;
 });

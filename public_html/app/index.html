@@ -27,6 +27,7 @@
 <script type="text/javascript" src="newsDetail/newsDetailController.js"></script>
 <script type="text/javascript" src="newsAbm/newsAbmController.js"></script>
 <script type="text/javascript" src="tv/tvController.js"></script>
+<script type="text/javascript" src="servicios/serviciosController.js"></script>
 
 <!-- Angular Directives -->
 <script type="text/javascript" src="common/directives/newsDirective/newsDirective.js"></script>
@@ -41,7 +42,6 @@
 				<div class="container-fluid">
 					<div class="navbar-left">
 						<h1 class="nav-bar-title">DIARIO DIGITAL</h1>
-						<img class="nav-bar-icon" alt="logo" src="../img/logo-diario.png">
 					</div>
 					<div class="navbar-right hidden-xs">
 						<img class="nav-bar-logo" alt="logo" src="../img/logo-mad.png">
@@ -52,8 +52,17 @@
 				<div class="col-md-1 col-xs-1"></div>
 				<div class="btn-group col-md-8 col-xs-8" role="group" aria-label="...">
 					<a href="#/home" type="button" class="btn btn-default btn-per">Inicio</a>
-					<a href="#/info" class="btn btn-default btn-per">Información</a>
-					<a href="#/contacto" class="btn btn-default btn-per">Contacto</a>
+<!-- 					<div class="dropdown"> -->
+						<a href="#/info" class="btn btn-default btn-per dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Secciones</a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="seccionesDropdown">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+						</ul>
+<!-- 					</div> -->
+					<a target="_blank" href="http://www.madclasificados.com.ar/" class="btn btn-default btn-per">Clasificados</a>
+					<a href="#/servicios" class="btn btn-default btn-per">Servicios</a>
 				</div>
 				<div class="col-md-3 col-xs-3 iconos">
 					<a href="#/radio" class="icono-radio"></a>

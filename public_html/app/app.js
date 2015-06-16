@@ -11,12 +11,12 @@ app.config(function($routeProvider) {
 	}).when('/radio', {
 		templateUrl : 'radio/radio.html',
 		controller : 'radioController'
-	}).when('/info', {
-		templateUrl : 'info/info.html',
-		controller : 'infoController'
+	}).when('/servicios', {
+		templateUrl : 'servicios/servicios.html',
+		controller : 'serviciosController'
 	}).when('/contacto', {
-		templateUrl : 'contacto/contacto.html',
-		controller : 'contactoController'
+		templateUrl : 'login/login.html',
+		controller : 'loginController'
 	}).when('/newsAbm', {
 		templateUrl : 'newsAbm/newsAbm.html',
 		controller : 'newsAbmController'
@@ -35,6 +35,10 @@ app.config(function($routeProvider) {
 });
 
 app.run(function($rootScope) {
+	//TODO: Put to a factory
+	$rootScope.advertisings = ["advertising_1.jpg", 
+	                           "advertising_2.jpeg", 
+	                           "advertising_3.jpg"];
 	//TODO: Dummy load of news
 	$rootScope.dummyNews = [
 		{
