@@ -30,7 +30,7 @@ body {
 
 .clima {display: inline-block}
 
-.iconos {margin-top: 7px; margin-left: 0}
+.iconos {margin-top: 7px; margin-left: -10px;}
 .iconos a {margin: 0 4px 0 0; border: none}
 
 .icono-radio {width: 48px; height: 40px; display: inline-block; background: url(../img/iconos.png) left; background-size: cover}
@@ -93,7 +93,14 @@ body {
 
 .nav-bar-weather-widget {
 	vertical-align: baseline;
-}
+	margin-left: 0px;
+	margin-right: 10px;
+	display: inline-block;
+	width: 120px
+	
+	}
+
+
 
 /* ------------- News Thumbails--------------- */
 .news-thumbnails-container {
@@ -171,7 +178,7 @@ body {
 	margin:10px;
 }
 
-.publi img {width: 100%}
+.publi img {width: 100%;}
 
 /* ------------- Streaming--------------- */
 .black-background {
