@@ -190,8 +190,12 @@ body {
 
 /* --------------TV Section-----------------*/
 .tv-videos-thumbnail {
-	width: 100%; 
-	display: block;
+	width: auto;
+    height: 200px;
+/*     background-image: url("{{news.thumbnailUrl}}"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 /* ------------- Index - Pagina de portada --------------- */ 

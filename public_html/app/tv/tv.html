@@ -17,8 +17,8 @@
 	<div class="col-md-8 col-md-offset-2 col-sm-12">
 		<slick infinite=false slides-to-show=3>
 			<div ng-repeat="video in videos" id="example">
-				<a href="https://www.youtube.com/watch?v={{video.id.videoId}}">
-					<img class="tv-videos-thumbnail" alt="{{video.snippet.title}}" ng-src="{{video.snippet.thumbnails.medium.url}}">
+				<a ng-if="video.snippet.thumbnails.medium.url" href="https://www.youtube.com/watch?v={{video.id.videoId}}">
+					<div class="tv-videos-thumbnail" style="background-image:url('{{video.snippet.thumbnails.medium.url}}')">
 				</a>
 			</div>
 		</slick>
