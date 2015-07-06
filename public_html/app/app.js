@@ -1,9 +1,5 @@
 var app = angular.module('app', [ 'ngRoute', 'restangular', 'ui.bootstrap', 'slick']);
 
-app.config(function(RestangularProvider) {
-	RestangularProvider.setBaseUrl('http://localhost:8081/index.php');
-});
-
 app.config(function($routeProvider) {
 	$routeProvider.when('/tv', {
 		templateUrl : 'tv/tv.html',
@@ -32,6 +28,35 @@ app.config(function($routeProvider) {
 	}).otherwise({
 		redirectTo : '/home'
 	});
+});
+
+app.config(function(RestangularProvider) {
+	RestangularProvider.setBaseUrl('http://rest-tvtandil.rhcloud.com/');
+	RestangularProvider.setFullResponse(true);
+	RestangularProvider.setResponseInterceptor(function(data, operation, route, url,response) {
+		  var newResponse;
+	      if (operation === "getList") {
+	    	if(data.hasOwnProperty('_embedded')){
+		        newResponse = data._embedded[route];
+	    	} else {
+	    		var isEmpty = true;
+	    		for(var prop in data){
+	    			if(data.hasOwnProperty(prop)){
+	    				isEmpty = false;
+	    			}
+	    		}
+	    		if(data&&!isEmpty){
+	    			newResponse = [data];
+	    		}	else {
+	    			newResponse = [];
+	    		}
+	    	}
+	      } else {
+	        newResponse = data;
+	      }
+	      
+	      return newResponse;
+	    });
 });
 
 app.run(function($rootScope) {

@@ -1,0 +1,13 @@
+<a class="news-thumbnail" href="#/newsDetail/{{newsElement.id}}">
+	<div class="panel panel-default">
+		<div class="panel-body news-thumbnail-panel">
+			<div class="news-thumbnail-image" style="background-image:url({{newsElement.thumbnailUrl}})"></div>
+			<h2 class="news-thumbnail-title"><b>{{newsElement.titulo}}</b></h2>
+			<span class="news-thumbnail-date"><b>Publicado:</b> 21 de Abril</span>
+			<pre class="news-thumbnail-description">{{newsElement.descripcion}}</pre>
+		</div>
+	</div>
+</a>
+<a ng-if="logged" href="#/newsAbm/{{newsElement.id}}">
+	<input type="button" class="btn btn-default" value="Editar"/> 
+</a>

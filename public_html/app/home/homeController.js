@@ -1,6 +1,10 @@
-var app = angular.module('app');
+var homeController = function($scope, Restangular) {
+	$scope.news = [];
+	
+	Restangular.all('news').getList().then(function(response) {
+		$scope.news = response.data;
+	})
+};
 
-app.controller('homeController', function($scope) {
-	//TODO: This news should be retrieved from the server
-	$scope.news=[0,1,2,3];
-});
+var app = angular.module('app');
+app.controller('homeController', homeController);

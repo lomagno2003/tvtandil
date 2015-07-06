@@ -2,9 +2,8 @@ var app = angular.module('app');
 
 app.controller('newsAbmController', function($scope, $rootScope, $routeParams, $location, Restangular) {
 	if($routeParams.newsId){
-		//TODO: Handle 404
-		$scope.actualNews = Restangular.one('news', $routeParams.newsId).get().then(function(elem){
-			$scope.actualNews = elem;
+		$scope.actualNews = Restangular.one('news', $routeParams.newsId).get().then(function(response){
+			$scope.actualNews = response.data;
 		});
 	} else {
 		$scope.actualNews = {};
@@ -22,7 +21,9 @@ app.controller('newsAbmController', function($scope, $rootScope, $routeParams, $
 	
 	$scope.save = function() {
 		if($scope.actualNews.id){
-			$scope.actualNews.put();
+			$scope.actualNews.put().then(function(data){
+				$('#newsSaved').modal('toggle');
+			});
 		} else {
 			Restangular.all('news/').post($scope.actualNews).then(function(result){
 				$location.path('/newsAbm/' + result);
@@ -40,7 +41,7 @@ app.controller('newsAbmController', function($scope, $rootScope, $routeParams, $
 	/* Images Section */
 	$scope.tmpImage = {};
 	$scope.addImageSubmit = function(){
-		$scope.tmpImage.type="NEW_IMAGE";
+		$scope.tmpImage.MEDIA_TYPE="IMAGE";
 		$scope.actualNews.media.push($scope.tmpImage);
 		$scope.tmpImage = {};
 	};

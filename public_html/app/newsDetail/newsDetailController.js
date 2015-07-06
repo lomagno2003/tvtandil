@@ -1,7 +1,9 @@
 var app = angular.module('app');
 
-app.controller('newsDetailController', function($scope, $rootScope, $routeParams) {
-	$scope.actualNews = $rootScope.dummyNews[parseInt($routeParams.newsId)];
+app.controller('newsDetailController', function($scope, $rootScope, $routeParams, Restangular) {
+	Restangular.one("news", $routeParams.newsId).get().then(function(data){
+		$scope.actualNews = data	
+	});
 	
 	$scope.sync = function(){
 		$('.carousel').carousel();
