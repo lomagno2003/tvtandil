@@ -28,7 +28,7 @@ body {
 
 .news-background {background: url("../img/noticias-fondo.png") no-repeat center; margin-right: 0}
 
-.clima {display: inline-block}
+.clima {display: inline-block;}
 
 .iconos {margin-top: 7px; margin-left: -10px;}
 .iconos a {margin: 0 4px 0 0; border: none}
@@ -63,8 +63,8 @@ body {
 .nav-bar-bottom-container{
 	background-color: #1E3F66; 
 	border: none; 
-	border-radius: 0; 
-	margin-bottom: 0px;
+	border-radius: 0;
+	padding-right: 1em;
 	margin:0; 
 }
 
