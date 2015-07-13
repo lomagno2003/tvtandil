@@ -1,26 +1,24 @@
-<div class="container">
-	<div class="row">
-		<div class="col-md-7 col-md-offset-1">
-			<h1>{{actualNews.titulo}}</h1>
+<div class="container-fluid">
+	<div class="col-md-7 col-md-offset-1">
+		<h1>{{actualNews.titulo}}</h1>
 
-			<div ng-if="actualNews.media.length>0">
-				<slick class="news-detail-slider" dots=true infinite=false
-					slides-to-show=1>
-				<div class="news-detail-slider-item"
-					ng-repeat="media in actualNews.media">
-					<img class="carousel-img" src="{{media.url}}">
-					<h4>Slide {{$index}}</h4>
-					<p>{{media.epigraph}}</p>
-				</div>
-				</slick>
+		<div ng-if="actualNews.media.length>0">
+			<slick class="news-detail-slider" dots=true infinite=false
+				slides-to-show=1>
+			<div class="news-detail-slider-item"
+				ng-repeat="media in actualNews.media">
+				<img class="carousel-img" src="{{media.url}}">
+				<h4>Slide {{$index}}</h4>
+				<p>{{media.epigraph}}</p>
 			</div>
-
-			<p>{{actualNews.descripcion}}</p>
+			</slick>
 		</div>
-		<div class="col-md-3">
-			<div class="publi" ng-repeat="advertising in advertisings">
-				<img alt="" ng-src="../img/advertisings/{{advertising}}">
-			</div>
+
+		<p>{{actualNews.descripcion}}</p>
+	</div>
+	<div class="col-md-3">
+		<div class="publi" ng-repeat="advertising in advertisings">
+			<img alt="" ng-src="../img/advertisings/{{advertising}}">
 		</div>
 	</div>
 </div>
