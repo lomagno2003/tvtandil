@@ -28,9 +28,8 @@ body {
 
 .news-background {background: url("../img/noticias-fondo.png") no-repeat center; margin-right: 0}
 
-.clima {display: inline-block;}
 
-.iconos {margin-top: 7px; margin-left: -10px;}
+.iconos {margin-top: 7px; display: inline-block; margin-right: 2em}
 .iconos a {margin: 0 4px 0 0; border: none}
 
 .icono-radio {width: 48px; height: 40px; display: inline-block; background: url(../img/iconos.png) left; background-size: cover}
@@ -220,6 +219,33 @@ body {
 
 .btn-diario {height: 12em; width: 12em; display: inline-block; background: url(../img/btn-diario.png) top; background-size: cover}
 .btn-diario:hover {background-position: bottom}
+
+
+
+@media screen and (max-width: 991px){
+	.img-diario {margin-top: 0em}
+	.fondo {}
+}
+
+@media screen and (max-width: 768px){
+	.nav-bar-weather-widget {display: none}
+}
+
+
+@media screen and (max-width: 768px){
+	.btn-per {width: 100%}
+	.iconos {width: 100%; margin-right: 0; text-align: center; padding-left: 4px}
+	.nav-bar-bottom-container {padding: 0}
+	.btn-group {width: 100%}
+	.icono-tv {float: none; margin: 0 auto !important}
+	.icono-diario {float: right}
+	.icono-radio {float: left;}
+	.nav-bar-title {float: none; text-align: center}
+	.body-view {margin-top: 300px}
+	.noticias {display: block; width: 90%; margin: 0 auto}
+	.publi {width: 90%; margin: 0 auto}
+	
+}
 
 
 
